@@ -34,7 +34,7 @@ contract FundMe {
      * @dev Chainlink 价格预言机接口实例
      * @notice 用于获取 ETH/USD 实时汇率
      */
-    AggregatorV3Interface internal dataFeed;
+    AggregatorV3Interface public dataFeed;
 
     /**
      * @dev 众筹目标金额，以美元计价（1000 USD，18位小数）
